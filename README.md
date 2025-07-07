@@ -2,104 +2,117 @@
 
 ## 📌 Project Overview
 
-This project focuses on **real-time gym crowd monitoring** using **Computer Vision (CV)** to enhance student experience and promote efficient gym usage at Arizona State University (ASU). The system detects people in gym surveillance frames, generates animated heatmaps showing density levels, and helps students plan gym visits more effectively.
+This project showcases a real-time gym crowd monitoring system using **Computer Vision (CV)** to enhance student experience and optimize gym utilization at **Arizona State University (ASU)**. It leverages classic CV techniques like **HOG + SVM** to detect people in images and generates **animated heatmaps** to visualize gym occupancy trends.
 
-> 🔍 Built as part of the **CIS 515 Final Project** at [ASU](https://www.asu.edu), leveraging **OpenCV, HOG + SVM**, and image processing.
+> 🛠 Developed as part of the **CIS 515: Computer Vision and AI** course at [ASU](https://www.asu.edu), by Team008.
 
 ---
 
 ## 🎯 Objective
 
-- Detect people in real-time gym video frames using CV  
-- Generate crowd density heatmaps  
-- Reduce overcrowding and save student time  
-- Build a scalable framework for campus-wide deployment
+- Detect individuals in gym surveillance images  
+- Generate visual heatmaps showing crowd density  
+- Support students in choosing optimal gym hours  
+- Lay the foundation for a scalable, real-time deployment
+
+---
+
+## 📂 Dataset
+
+The project uses open-source crowd images from Kaggle and simulated gym-like frames.
+
+📊 **Dataset Used**:  
+[Kaggle – Crowd Counting Dataset by Balbir](https://www.kaggle.com/datasets/balbir27/ai-crowd-monitoring)
 
 ---
 
 ## 🛠 Technologies Used
 
 - **Language**: Python  
-- **Libraries**: OpenCV, NumPy, Matplotlib, Seaborn, OS  
-- **Model**: HOG (Histogram of Oriented Gradients) + SVM  
-- **Computer Vision Task**: Pedestrian detection in static frames  
-- **Output**: Heatmaps per frame + Animated GIF
+- **Libraries**: OpenCV, NumPy, Seaborn, Matplotlib, OS  
+- **Model**: Histogram of Oriented Gradients (HOG) + Support Vector Machine (SVM)  
+- **Task**: Pedestrian detection on static images  
+- **Output**: Heatmaps for each frame + animated GIF showing density patterns
 
 ---
 
 ## 🧪 Methodology
 
-1. **Data Source**: Public crowd images from [Kaggle Crowd Counting Dataset](https://www.kaggle.com/datasets/fmena14/crowd-counting/data)
-2. **Preprocessing**:
-   - Resized and converted images to RGB
-   - Normalized for OpenCV detection
-3. **Detection**:
-   - Applied OpenCV’s `hog.detectMultiScale()` to detect people
-   - Stored detected coordinates per frame
-4. **Heatmap Generation**:
-   - Generated heatmaps with Seaborn based on detection counts
-   - Saved per-frame heatmaps for compilation
-5. **Evaluation**:
-   - Compared predicted people counts with ground truth
+1. **Image Preprocessing**
+   - Images resized and converted to RGB
+   - Normalization applied for detection optimization
+
+2. **Person Detection**
+   - OpenCV’s `hog.detectMultiScale()` used to detect people
+   - Detections stored per frame for visualization
+
+3. **Heatmap Generation**
+   - Seaborn heatmaps created based on bounding box coordinates
+   - Combined into a single animated crowd GIF
+
+4. **Evaluation**
+   - Compared detections with ground truth counts
    - MAE (Mean Absolute Error) ≈ 20 people per frame
 
 ---
 
 ## 📽 Sample Outputs
 
-- ✅ Per-frame person detections  
-- ✅ Heatmap images  
-- ✅ Animated crowd density GIF
+- ✔️ Detected people with bounding boxes  
+- ✔️ Individual heatmap per frame  
+- ✔️ Animated GIF showing overall crowd flow
 
 ---
 
-## ⚖️ Evaluation
+## ⚖️ Evaluation Summary
 
-| Metric            | Result              |
-|-------------------|---------------------|
-| MAE (avg error)   | ~20 people/frame    |
-| Detection Accuracy| Moderate            |
-| Performance       | Real-time viable    |
+| Metric              | Result             |
+|---------------------|--------------------|
+| MAE (avg. error)    | ~20 people/frame   |
+| Detection Accuracy  | Moderate (baseline model) |
+| Processing Speed    | Real-time capable  |
 
 ---
 
 ## 🔐 Privacy & Ethics
 
-- No personal identifiers used  
-- Only crowd-level metrics shown  
-- Future versions will improve anonymization and efficiency
+- No actual ASU gym footage or personal data used  
+- Project used anonymized and synthetic crowd datasets  
+- Future improvements will include real-time anonymization methods
 
 ---
 
-## 🌐 Future Work
+## 🚀 Future Enhancements
 
-- Switch to **YOLOv8** or **MobileNet SSD** for high-density accuracy  
-- Embed live heatmap into a **mobile app**  
-- Expand across other ASU gym facilities  
-- Explore real-time video streaming and backend APIs
-
----
-
-## 👨‍💻 Team Contributions
-
-- **Balbir Singh**: Model evaluation, MAE calculation, risk analysis, presentation conclusion  
-- **Maria Sequeira**: End-to-end pipeline, system design  
-- **Rasika Teli**: Dataset processing, problem framing  
-- **Yu Chin Chen**: CV model setup, heatmap generation  
-- **Harsh Kevadiya**: Limitations, future scope, quality review
+- Integrate **YOLOv8** or **MobileNet SSD** for better accuracy in dense crowds  
+- Stream real-time video from gym cams  
+- Deploy heatmap dashboard in a **mobile app for students**  
+- Expand to all ASU athletic facilities  
+- Add REST APIs for live data sharing
 
 ---
 
-## 🗂 Repo Structure
+## 👥 Team Contributions
 
-## 🔗 Links
-
-- [Kaggle Dataset Used](https://www.kaggle.com/datasets/fmena14/crowd-counting/data)
-- [OpenCV Pedestrian Detection](https://github.com/opencv/opencv/blob/4.x/samples/python/peopledetect.py)
-- [Histogram of Oriented Gradients – LearnOpenCV](https://learnopencv.com/histogram-of-oriented-gradients/)
+| Name             | Contributions                                     |
+|------------------|----------------------------------------------------|
+| **Balbir Singh** | Evaluation metrics, risk mitigation, final review |
+| Maria Sequeira   | Detection pipeline, OpenCV logic                  |
+| Rasika Teli      | Dataset preparation, problem formulation         |
+| Yu Chin Chen     | Heatmap generation, model tuning                 |
+| Harsh Kevadiya   | Project limitations, roadmap, presentation design|
 
 ---
 
-## 🔍 Tags
+## 🔗 Useful Links
 
-`#ComputerVision` `#OpenCV` `#CrowdDetection` `#Heatmaps` `#GymAnalytics` `#ASU` `#Team008` `#Python`
+- 📂 [Kaggle Dataset – Crowd Monitoring by Balbir](https://www.kaggle.com/datasets/balbir27/ai-crowd-monitoring)
+- 📘 [OpenCV HOG People Detection Example](https://github.com/opencv/opencv/blob/4.x/samples/python/peopledetect.py)
+- 📖 [LearnOpenCV – HOG Explained](https://learnopencv.com/histogram-of-oriented-gradients/)
+
+---
+
+## 🏷 Tags
+
+`#ComputerVision` `#OpenCV` `#CrowdMonitoring` `#GymAnalytics`  
+`#HOG` `#ASU` `#Python` `#Heatmap` `#CIS515` `#Team008`
