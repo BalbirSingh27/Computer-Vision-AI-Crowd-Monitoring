@@ -116,7 +116,7 @@ The project uses open-source crowd images from Kaggle and simulated gym-like fra
 📚 [Histogram of Oriented Gradients – LearnOpenCV](https://learnopencv.com/histogram-of-oriented-gradients/)  
 🏋️ [RecWell at UC Berkeley](https://recwell.berkeley.edu/recreation-wellbeing-program-and-service-updates/)  
 📱 [RU Gyms Crowd Meter – Devpost](https://devpost.com/software/ru-gyms-crowd-meter)  
-📊 [Kaggle Dataset – fmena14](https://www.kaggle.com/datasets/fmena14/crowd-counting/data)
+📊 [Kaggle Dataset](https://www.kaggle.com/datasets/balbir27/ai-crowd-monitoring)
 
 ---
 
