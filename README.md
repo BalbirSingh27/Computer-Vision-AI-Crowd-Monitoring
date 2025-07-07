@@ -106,9 +106,17 @@ The project uses open-source crowd images from Kaggle and simulated gym-like fra
 
 ## 🔗 Useful Links
 
-- 📂 [Kaggle Dataset – Crowd Monitoring by Balbir](https://www.kaggle.com/datasets/balbir27/ai-crowd-monitoring)
-- 📘 [OpenCV HOG People Detection Example](https://github.com/opencv/opencv/blob/4.x/samples/python/peopledetect.py)
-- 📖 [LearnOpenCV – HOG Explained](https://learnopencv.com/histogram-of-oriented-gradients/)
+## 📎 Reference Links
+
+🔗  ## 📎 Reference Links
+
+## 📎 Reference Links
+
+🧠 [OpenCV People Detection Script](https://github.com/opencv/opencv/blob/4.x/samples/python/peopledetect.py)  
+📚 [Histogram of Oriented Gradients – LearnOpenCV](https://learnopencv.com/histogram-of-oriented-gradients/)  
+🏋️ [RecWell at UC Berkeley](https://recwell.berkeley.edu/recreation-wellbeing-program-and-service-updates/)  
+📱 [RU Gyms Crowd Meter – Devpost](https://devpost.com/software/ru-gyms-crowd-meter)  
+📊 [Kaggle Dataset – fmena14](https://www.kaggle.com/datasets/fmena14/crowd-counting/data)
 
 ---
 
